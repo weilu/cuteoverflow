@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 gem 'pg'
-
+gem 'haml'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -37,6 +37,9 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'vcr'
+  gem 'fakeweb'
+  gem 'capybara'
 end
 
 

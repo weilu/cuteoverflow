@@ -10,8 +10,8 @@ Cuteoverflow::Application.routes.draw do
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  resources :stack_users
+  match 'stack_users/search' => 'stack_users#search'
 
   # Sample resource route with options:
   #   resources :products do
@@ -48,7 +48,7 @@ Cuteoverflow::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'application#home'
 
   # See how all your routes lay out with "rake routes"
 

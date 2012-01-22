@@ -1,0 +1,5 @@
+%section
+  =form_tag controller: 'stack_users', action: 'search', method: 'get' do
+    =label_tag :id, "User ID"
+    =search_field_tag :id
+    =submit_tag "Search"
